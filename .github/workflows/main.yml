@@ -1,3 +1,20 @@
+# on: push
+# name: 🚀 Deploy website on push
+# jobs:
+#   web-deploy:
+#     name: 🎉 Deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: 🚚 Get latest code
+#       uses: actions/checkout@v2
+#
+#     - name: 📂 Sync files
+#       uses: SamKirkland/FTP-Deploy-Action@4.1.0
+#       with:
+#         server: ftp://ftp.aratielectronics.in/
+#         username: u707582663.dip
+#         password: ${{ secrets.TEST_DEPLOYMENT_SECRET }}
+
 on: push
 name: 🚀 Deploy website on push
 jobs:
@@ -14,3 +31,5 @@ jobs:
         server: ftp://ftp.aratielectronics.in/
         username: u707582663.dip
         password: ${{ secrets.TEST_DEPLOYMENT_SECRET }}
+        protocol: ftps
+        # port: 1234 # todo replace with your web hosts ftps port
