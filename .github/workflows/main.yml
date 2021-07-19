@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        server: ftp://ftp.aratielectronics.in/deploy
+        server: ftp://ftp.aratielectronics.in/
         username: u707582663.dip
         password: ${{ secrets.TEST_DEPLOYMENT_SECRET }}
